@@ -11,8 +11,6 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
-
-}
+function sortClassesBySize() {}
 
 module.exports = sortClassesBySize
