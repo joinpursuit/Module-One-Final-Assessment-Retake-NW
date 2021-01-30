@@ -11,8 +11,16 @@
  * ex: oldestPerson({ 'Marcus': 29, 'Julia': 29, 'Kevin': 34 })
  * returns: 'Kevin'
  */
-function oldestPerson() {
+const oldestPerson = (obj) => {
+  let name = ""; //return the name of the oldest person
+  let oldest = -Infinity;
+  for (const key in obj) {
+    if (oldest < obj[key]) {
+      oldest = obj[key];
+      name = key;
+    }
+  }
+  return name;
+};
 
-}
-
-module.exports = oldestPerson
+module.exports = oldestPerson;
