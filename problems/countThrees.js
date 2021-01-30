@@ -12,9 +12,17 @@
 * ex: countThrees(47)
 * returns: 0
 */
+function countThrees(n, num) {
+    let counter = 0;
+    let remainder;
+    while( num > 0) {
+        remainder = num % 10;
+        num /= 10;
+        if(remainder == 3)
+        counter++;
+    } 
+    return counter;
+};
 
-function countThrees() {
-
-}
 
 module.exports = countThrees
