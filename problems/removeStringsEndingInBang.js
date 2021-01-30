@@ -11,8 +11,22 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
-
+function removeStringsEndingInBang(arr) {
+    neuArr = []
+    for (let i = 0; i <= arr.length-1; i++) {
+        
+        if (!arr[i].includes('!')){
+            neuArr.push(arr[i])
+        }
+    } console.log(neuArr)
+    return neuArr
 }
+// function removeStringsEndingInBang(arr) {
+//     neuArr = []
+//     remove = '!'
+//     console.log(arr.indexOf(remove))
+// }
+
+console.log(removeStringsEndingInBang(["hello!", "hel!o", "a"]))
 
 module.exports = removeStringsEndingInBang
