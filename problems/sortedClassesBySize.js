@@ -12,7 +12,9 @@
 */
 
 function sortClassesBySize() {
-
+    let arr = [];
+    for (let i = 0; i <= arr.length; i++)
+    return arr[i].sort("");
 }
 
 module.exports = sortClassesBySize
