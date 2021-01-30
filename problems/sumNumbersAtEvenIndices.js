@@ -12,7 +12,14 @@
 * returns: 45
 */
 function sumNumbersAtEvenIndices() {
-
+    let arr = [];
+    for(let i = 0; i < arr.length; i++) {
+        if(i % 2 == 0)
+        even += arr[i];
+    }else{
+        odd += arr[i];
+    }
+    return arr;
 }
 
 module.exports = sumNumbersAtEvenIndices
