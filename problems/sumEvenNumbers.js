@@ -9,8 +9,16 @@
 * ex: sumEvenNumbers([4, 3, 10])
 * returns: 14
 */
-function sumEvenNumbers() {
-
+function sumEvenNumbers(arr) {
+    let neuArr = [] 
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            neuArr.push(arr[i])
+        }
+    }
+    let sum = (acc, val) => { return acc + val; }
+    return neuArr.reduce(sum)
 }
+
 
 module.exports = sumEvenNumbers
