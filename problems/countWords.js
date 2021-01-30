@@ -14,7 +14,17 @@
 * returns: {}
 */
 
-function countWords() {
+const countWords = (arr) => {
+    let result = {};
+    for(let i = 0; i < arr.length; i++){
+        let words = arr[i];
+        if(result[words] !== undefined){
+            result[words] += 1;
+        }else{
+            result[words] = 1;
+        }
+    }
+    return result;
   
 }
 

@@ -13,7 +13,12 @@
 * returns: false (because the string "ten" is not a number)
 */
 
-function isMultipleOfFive() {
+const isMultipleOfFive = (n) => {
+    if(n % 5 === 0){
+        return true;
+    }else{
+        return false;
+    }
 
 }
 
