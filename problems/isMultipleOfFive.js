@@ -21,6 +21,6 @@ function isMultipleOfFive(n) {
     } else {
         return false
     }
-}
+};
 
 module.exports = isMultipleOfFive
