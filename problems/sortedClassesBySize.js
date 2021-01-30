@@ -11,7 +11,13 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+const sortClassesBySize = (arr) => {
+    arr.sort((aclass, bclass) => {
+        return aclass.studentCount - bclass.studentCount;
+    });
+    return arr.map((aclass) => {
+        return arr.aclass;
+    });
 
 }
 
