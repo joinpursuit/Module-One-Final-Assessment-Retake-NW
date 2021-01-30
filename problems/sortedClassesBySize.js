@@ -11,7 +11,14 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+function sortClassesBySize(classes) {
+    classes.sort((subject1, subject2) => {
+        return subject1 - subject2
+    }).map((subject) => {
+        return subject.subject
+    })
+
+
 
 }
 

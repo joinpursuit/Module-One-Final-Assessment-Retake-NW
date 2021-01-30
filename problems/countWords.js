@@ -14,8 +14,16 @@
 * returns: {}
 */
 
-function countWords() {
-  
+function countWords(arr) {
+    const output = {};
+    arr.forEach((el) => {
+        if (output[el]) {
+            output[el] += 1;
+        } else {
+            output[el] = 1;
+        }
+    })
+    return output;
 }
 
 module.exports = countWords

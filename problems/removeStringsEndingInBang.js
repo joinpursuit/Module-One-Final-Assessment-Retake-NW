@@ -11,8 +11,11 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
-
+function removeStringsEndingInBang(arr) {
+    return arr.filter((el) => {
+        el.lastIndexOf('!');
+    })
 }
+
 
 module.exports = removeStringsEndingInBang

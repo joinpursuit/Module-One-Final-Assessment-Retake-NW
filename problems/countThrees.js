@@ -13,8 +13,15 @@
 * returns: 0
 */
 
-function countThrees() {
-
+function countThrees(n, target) {
+    let output = 0;
+    if (n.toString().length) {
+        output += typeof "3"
+        console.log(output)
+    }
+    return output;
 }
+
+
 
 module.exports = countThrees
