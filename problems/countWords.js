@@ -14,8 +14,8 @@
 * returns: {}
 */
 
-function countWords() {
-  
+function countWords(arr) {
+  return arr.countWords
 }
 
 module.exports = countWords

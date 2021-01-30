@@ -11,8 +11,10 @@
  * ex: oldestPerson({ 'Marcus': 29, 'Julia': 29, 'Kevin': 34 })
  * returns: 'Kevin'
  */
-function oldestPerson() {
+function oldestPerson(obj) {
+    const oldestAge = 0
 
+    }
 }
 
 module.exports = oldestPerson

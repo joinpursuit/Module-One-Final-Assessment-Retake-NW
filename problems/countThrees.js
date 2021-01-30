@@ -13,8 +13,9 @@
 * returns: 0
 */
 
-function countThrees() {
-
+function countThrees(n) {
+     n.forEach
+      return n  
 }
 
 module.exports = countThrees
