@@ -1,7 +1,8 @@
 /**
 * Returns the total number of students in all classes
 * 
-* @param {object[]} arr - The input array of classes. Objects will be in the form: { subject: "math", studentCount: 30 }
+* @param {object[]} arr - The input array of classes. Objects will be in the form: 
+{ subject: "math", studentCount: 30 }
 * @returns {number} - The total number of students
 * 
 * ex: totalNumberOfStudents([{subject: "A", studentCount: 10}, {subject "B", studentCount: 100}])
@@ -11,8 +12,15 @@
 * returns: 167
 */
 
-function totalNumberOfStudents() {
-
+function totalNumberOfStudents(arr) {
+  let total = 0;
+  let amount = arr.map((el) => {
+    return el.studentCount;
+  });
+  amount.forEach((el) => {
+    total += el;
+  });
+  return total;
 }
-
-module.exports = totalNumberOfStudents
+//correct
+module.exports = totalNumberOfStudents;
