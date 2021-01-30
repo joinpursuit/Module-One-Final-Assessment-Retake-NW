@@ -11,8 +11,17 @@
  * ex: oldestPerson({ 'Marcus': 29, 'Julia': 29, 'Kevin': 34 })
  * returns: 'Kevin'
  */
-function oldestPerson() {
+function oldestPerson(object) {
+  let arrOldestPerson = [];
 
+  for (let key in object) {
+    arrOldestPerson.push([key, object[key]]);
+  }
+  arrOldestPerson.sort((a, b) => {
+    return b[1] - a[1];
+  });
+  return arrOldestPerson[0][0];
 }
+//correct
 
-module.exports = oldestPerson
+module.exports = oldestPerson;
