@@ -14,8 +14,13 @@
 * returns: {}
 */
 
-function countWords() {
-  
+function countWords(arr) {
+let map = {};
+for (let i = 0; i < arr.length; i++) {
+    let item = arr[i];
+    map[item] = (map[item] + 1) || 1;
+  }
+  return map;
 }
 
 module.exports = countWords

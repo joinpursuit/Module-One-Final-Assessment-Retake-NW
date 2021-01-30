@@ -11,8 +11,8 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
-
+function removeStringsEndingInBang(arr) {
+ 
 }
 
 module.exports = removeStringsEndingInBang
