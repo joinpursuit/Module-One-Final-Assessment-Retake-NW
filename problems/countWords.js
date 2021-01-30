@@ -16,7 +16,7 @@
 
 function countWords() {
     let arr = [];
-    arrB = {};
+    arrB = [];
     let counter;
     arr.sort();
     for (let i = 0; i < arr.length; i++) {
