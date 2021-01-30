@@ -15,7 +15,20 @@
 */
 
 function countWords() {
-  
-}
+    let arr = [];
+    arrB = {};
+    let counter;
+    arr.sort();
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] !== counter) {
+            arr.push(arr[i]);
+            arrB.push(1);
+        } else {
+            arrB[arrB.length - 1] ++;
+        }
+        counter = arr[i];
+    }
+    return [arr, arrB]
+};
 
 module.exports = countWords
