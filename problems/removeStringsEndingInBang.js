@@ -11,7 +11,7 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
+function removeStringsEndingInBang(arr) {
 
 }
 

@@ -11,7 +11,7 @@
 * returns: 167
 */
 
-function totalNumberOfStudents() {
+function totalNumberOfStudents(arr) {
 
 }
 
