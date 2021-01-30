@@ -12,7 +12,12 @@
  * returns: 'Kevin'
  */
 function oldestPerson() {
-
+    let obj = {};
+    let person = []
+    for (let i = 0; i <= person; i++) {
+        return (obj.push(i) + "")
+    }
+    
 }
 
 module.exports = oldestPerson
