@@ -12,7 +12,13 @@
 */
 
 function totalNumberOfStudents() {
+    for( arr in totalNumberOfStudents[" "] [arr]) {
+        arr.push(totalNumberOfStudents[" "] [arr])
+    }
+    arr.sort(function(a, b) {
+        return a.totalNumberOfStudents(b)
+    }
 
-}
+};
 
 module.exports = totalNumberOfStudents
