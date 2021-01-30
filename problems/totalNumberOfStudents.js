@@ -11,8 +11,8 @@
 * returns: 167
 */
 
-function totalNumberOfStudents() {
-
+function totalNumberOfStudents(arr) {
+    
 }
 
 module.exports = totalNumberOfStudents
