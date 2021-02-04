@@ -15,7 +15,7 @@
  */
 
 const countWords = (arr) => {
-  let object = {};
+  const object = {}; //use const cause we wont be reassigning the object
   arr.forEach((el) => {
     if (object[el]) {
       object[el]++;

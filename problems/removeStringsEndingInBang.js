@@ -10,11 +10,11 @@
  * ex: removeStringsEndingInBang(["!", "", "a"])
  * returns: ["", "a"]
  */
-
+//still working on
 const removeStringsEndingInBang = (arr) => {
   let output = [];
-  arr.forEach((el) => {
-    if (!el.includes("!")) {
+  arr.filter((el) => {
+    if (el.length - 1 === "!") {
       output.push(el);
     }
   });

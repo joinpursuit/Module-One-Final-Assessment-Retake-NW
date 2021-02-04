@@ -23,16 +23,12 @@
  * Add the numbers: 3 + 5 + 6 + 9 + 10 + 12 + 15 + 18 = 78
  * Notice that 15 is a multiple of 3 and 5 BUT it is only added ONCE.
  */
-
+//still working on this one
 const multiplesOfThreeOrFive = (n) => {
   let sum = 0;
   for (let i = 0; i <= n; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
       sum += i;
-      if (i % 3 === 0 && i % 5 === 0) {
-        sum -= i;
-      }
-      //sum += i;
     }
   }
   return sum;

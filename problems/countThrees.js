@@ -17,7 +17,8 @@ const countThrees = (n) => {
   let output = 0;
   let newString = n.toString();
   for (let i = 0; i < newString.length; i++) {
-    if (newString[i].includes("3")) {
+    if (newString[i] === "3") {
+      //can also do newString[i].includes("3")
       output += 1;
     }
   }

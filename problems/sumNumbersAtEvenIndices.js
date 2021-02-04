@@ -14,6 +14,7 @@
 const sumNumbersAtEvenIndices = (arr) => {
   let sum = 0;
   arr.forEach((el, i) => {
+    //can also use a for loop and increment by 2
     if (i % 2 === 0) {
       sum += el;
     }

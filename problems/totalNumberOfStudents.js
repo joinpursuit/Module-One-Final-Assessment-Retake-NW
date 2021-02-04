@@ -10,14 +10,14 @@
  * ex: totalNumberOfStudents([{subject: "Math", studentCount: 50}, {subject: "Gym", studentCount: 17}, {subject: "Art", studentCount: 100}])
  * returns: 167
  */
-
+//use for Each because we are iterating through an array not an object
 const totalNumberOfStudents = (arr) => {
   let total = 0;
-  for (let i in arr) {
-    //key
-    total += arr[i];
-  }
+  arr.forEach((el) => {
+    total += arr[el];
+  });
+  //key
   return total;
-};
+}; //still working on it
 
 module.exports = totalNumberOfStudents;
