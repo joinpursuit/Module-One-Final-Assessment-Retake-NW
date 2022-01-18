@@ -12,15 +12,11 @@
 */
 
 function totalNumberOfStudents(arr) {
-    const neuArr = [];
-    let count = 0;
-    for (let i = 0; i < arr.length; i++) {
-        neuArr.push(arr[i])
-       count = count + arr[i]
+    let total = 0;
+    for (let i = 0, len = arr.length; i < len; i++){
+        total += arr[i].studentCount
     }
-    console.log(neuArr)
-    return neuArr
-
+    return total;
 }
 console.log(totalNumberOfStudents([{subject: "A", studentCount: 10}, {subject: "B", studentCount: 100}]))
 

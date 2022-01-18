@@ -14,14 +14,16 @@
 */
 
 function countThrees(number) {
-    let string = number.toString();
-    let threeCount = 0
-    for (let i = 0; i < string.length; i++) {
-        if (string[i].includes(3)) {
-            threeCount++
+    const stringify = Array.from(String (number));
+    let counter = 0;
+    for (let i = 0, len = stringify.length; i < len; i++){
+        console.log(typeof stringify[i])
+        if (stringify[i] === '3'){
+            counter++
         }
     }
-    return threeCount
+    return counter;    
 }
 
+console.log(countThrees(3203))
 module.exports = countThrees

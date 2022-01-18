@@ -11,17 +11,9 @@
  * ex: oldestPerson({ 'Marcus': 29, 'Julia': 29, 'Kevin': 34 })
  * returns: 'Kevin'
  */
-function oldestPerson(pbj) {//crunchy skippy only my guyyyyyy
-    let senior = []
+function oldestPerson(obj) {//crunchy skippy only my guyyyyyy
     
-    for (oldest in pbj) {
-        senior.push([oldest, pbj[oldest]]);
-    }
-    senior.sort(function (a, b) {
-        return b[1] - a[1]
-    })
-    return senior[0][0]
 }
 
-
+oldestPerson({ 'Joe': 42, 'Tanya': 11 })
 module.exports = oldestPerson

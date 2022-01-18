@@ -25,14 +25,7 @@
 */
 
 function multiplesOfThreeOrFive(number) {
-    let nums = new Array
-    const callFunc = (acc, val) => acc + val;
-    for (let i = 1; i < number; i++) {
-        if (i % 3 === 0 || i % 5 === 0) {
-            nums.push(i)
-        }
-    }
-    return nums.reduce(callFunc)
+    
 }
 console.log(multiplesOfThreeOrFive(20))
 module.exports = multiplesOfThreeOrFive

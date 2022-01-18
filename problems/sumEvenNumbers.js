@@ -10,15 +10,13 @@
 * returns: 14
 */
 function sumEvenNumbers(arr) {
-    let neuArr = [] 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            neuArr.push(arr[i])
-        }
+    let counter=0;
+    for (let i=0, len=arr.length; i < len; i++){
+        arr[i] % 2 === 0 
+        ? counter+=arr[i]
+        : null
     }
-    let sum = (acc, val) => { return acc + val; }
-    return neuArr.reduce(sum)
-}
-
+    return counter;
+};
 
 module.exports = sumEvenNumbers
