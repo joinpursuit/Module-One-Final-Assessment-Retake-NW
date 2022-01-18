@@ -19,7 +19,7 @@ function lemonadeStand (bills){
             if (ten > 0){
                 ten--
                 five--
-            } else { 
+            } else {  
                 five-=3
             }
         }
