@@ -9,20 +9,16 @@
 //so really all i have to do is count the amount of minutes between the hour and minute hands
 //every 12 minutes the hour hand moves 1 minute
 
-//if time = 1305 -> 6*5 = 30degs 
-//if time = 1515 ->  
 
 
-//at 1540 -> minute hand is 3 mins past 3 and minute hand is at 40
 const timeAngle = (time)=> {
-    let hour
-    let minute
-    if (time.length > 3) {
-        hour = Math.floor(Number (time[0].concat(time[1])) / 12)
-        console.log(hour)
-    } else hour = time[0]
+    let degreeHour = 
+        Number(time) > 1200 
+            ? 5 * (Math.floor(Number(time[0] + time[1]) /12)) * 6 
+            : 5 * (Number(time[0] + time[1])) * 6
+    let degreeMinute = (Number(time[2]+time[3]))*6
     
-
+    return Math.abs(degreeHour - degreeMinute)
 }
 
-console.log(timeAngle('1345'))
+console.log(timeAngle('1145'))
