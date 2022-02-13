@@ -14,8 +14,14 @@
 * returns: {}
 */
 
-function countWords() {
-  
-}
-
+function countWords(arr) {
+    let obj = {}
+    for (let i = 0, len = arr.length; i < len; i++){
+        obj[arr[i]] 
+            ? obj[arr[i]]++
+            : obj[arr[i]] = 1
+    };
+    return obj
+};
+console.log(countWords(["dog", "cat", "goat", 'dog']))
 module.exports = countWords

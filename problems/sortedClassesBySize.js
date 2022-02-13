@@ -11,8 +11,14 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
-
+function sortClassesBySize(arr) {
+    const sortedArr = arr.sort((a,b)=> a.studentCount - b.studentCount);
+    let sortedClasses = [];
+    for (let subject of sortedArr){
+        sortedClasses.push(subject.subject)
+    }
+    return sortedClasses;    
 }
+console.log(sortClassesBySize([ {subject: "math", studentCount: 50}, {subject: "gym", studentCount: 10}, {subject: "history", studentCount: 300}]))
 
 module.exports = sortClassesBySize

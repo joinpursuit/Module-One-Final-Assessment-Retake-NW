@@ -13,8 +13,17 @@
 * returns: 0
 */
 
-function countThrees() {
-
+function countThrees(number) {
+    const stringify = Array.from(String (number));
+    let counter = 0;
+    for (let i = 0, len = stringify.length; i < len; i++){
+        console.log(typeof stringify[i])
+        if (stringify[i] === '3'){
+            counter++
+        }
+    }
+    return counter;    
 }
 
+console.log(countThrees(3203))
 module.exports = countThrees

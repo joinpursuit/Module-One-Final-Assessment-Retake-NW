@@ -11,8 +11,9 @@
  * ex: oldestPerson({ 'Marcus': 29, 'Julia': 29, 'Kevin': 34 })
  * returns: 'Kevin'
  */
-function oldestPerson() {
-
+function oldestPerson(obj) {//crunchy skippy only my guyyyyyy
+    
 }
 
+oldestPerson({ 'Joe': 42, 'Tanya': 11 })
 module.exports = oldestPerson

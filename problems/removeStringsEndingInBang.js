@@ -1,3 +1,4 @@
+'use strict'
 /**
 * Removes all strings ending in "!" from an array of strings.
 * 
@@ -11,8 +12,16 @@
 * returns: ["", "a"]
 */
 
-function removeStringsEndingInBang() {
-
+function removeStringsEndingInBang(arr) {
+    let neuArr = []
+    for (let i = 0; i <= arr.length-1; i++) {
+        if (!arr[i].includes('!')){
+            neuArr.push(arr[i])
+        }
+    };
+    return neuArr;
 }
+
+console.log(removeStringsEndingInBang(["!", "", "a",'a!']))
 
 module.exports = removeStringsEndingInBang
