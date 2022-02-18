@@ -11,7 +11,21 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+function sortClassesBySize(subjects) {
+  // A variable, `sortedArray` is declared and assigned a value of the inputted array of objects, `subjects` with the .sort() method attached. Then this method uses an anonymous arrow function with 2 parameters that compare the two number values of the studenCount keys in the objects. As all the objects in the array are compared by two each time they are reassembled in ascending order. These objects are then pushed into the new array, `sortedArray`.
+  const sortedArray = subjects.sort((subjectCount1, subjectCount2) => {
+    return subjectCount1.studentCount - subjectCount2.studentCount;
+  });
+  
+  // Another empty array, `classesLowToHigh` is created.
+  const classesLowToHigh = [];
+  
+  // A for loop loops through `sortedArray`, and pushes the subject values into the new array as the problem asks.
+  for (let i = 0; i < sortedArray.length; i++) {
+    classesLowToHigh.push(sortedArray[i].subject);
+  }
+  // Return the `classesLowToHigh` array with string names of subjects in ascending order as the problem asks.
+  return classesLowToHigh;
 
 }
 
