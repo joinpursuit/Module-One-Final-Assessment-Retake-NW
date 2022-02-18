@@ -11,7 +11,17 @@
 * ex: sumNumbersAtEvenIndices([5, 0, 15, 0, 25, 0])
 * returns: 45
 */
-function sumNumbersAtEvenIndices() {
+
+function sumNumbersAtEvenIndices(nums) {
+  let totalEvenIndices = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (i % 2 === 0) {
+      totalEvenIndices += nums[i];
+    }
+  }
+
+  return totalEvenIndices;
 
 }
 
