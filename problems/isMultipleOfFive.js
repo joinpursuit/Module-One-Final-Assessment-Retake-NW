@@ -13,7 +13,12 @@
 * returns: false (because the string "ten" is not a number)
 */
 
-function isMultipleOfFive() {
+function isMultipleOfFive(n) {
+  if (!n || typeof n !== 'number' || n % 5 !== 0) {
+    return false;
+  } else if (n % 5 === 0) {
+    return true;
+  } 
 
 }
 
