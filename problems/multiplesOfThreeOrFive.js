@@ -24,8 +24,17 @@
 * Notice that 15 is a multiple of 3 and 5 BUT it is only added ONCE.
 */
 
-function multiplesOfThreeOrFive() {
+function multiplesOfThreeOrFive(n) {
+let result = 0;
+    for (i = 0; i<n;i++){
+        if (i%3 === 0 || i%5 === 0){
+            result +=i;
 
+        }
+    }
+
+
+return result;
 }
 
 module.exports = multiplesOfThreeOrFive

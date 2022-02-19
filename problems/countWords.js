@@ -14,8 +14,22 @@
 * returns: {}
 */
 
-function countWords() {
-  
+function countWords(arr) {
+  result = {}
+for (const word of arr){
+   if (result[word]){
+       result[word] += 1;
+   } else {
+       result[word] = 1;
+       //console.log("asdas")
+   }
+}
+
+
+
+//console.log(result);
+
+  return result;
 }
 
 module.exports = countWords
