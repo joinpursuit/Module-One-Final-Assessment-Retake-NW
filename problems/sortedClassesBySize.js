@@ -11,7 +11,57 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+function sortClassesBySize(arr) {
+let result = [];
+let compare = arr[0];
+
+arr.sort((a,b) => {return a.studentCount - b.studentCount})// is it possible to do it with using sort?
+for (let i = 0; i < arr.length; i++){
+    result.push(arr[i].subject);
+}
+
+// for (let i = 0; i < arr.length; i++){
+
+//     for (let j = 0; j < result.length; j++){
+//         if (arr[i].studentCount < )
+
+//     }
+
+// }
+
+// for (const clas of arr){
+//         //console.log(clas.studentCount);
+//        if (clas.studentCount < compare.studentCount){
+//             result.unshift(clas.subject);
+//             console.log(result);
+//        } else {
+//            result.push(clas.subject);
+//        }
+//  }
+
+
+
+
+//console.log(result.pop());
+
+    // for (let i = 1; i < arr.length; i++){
+    //    // console.log(arr[i+1].studentCount)
+    //     if (arr[i].studentCount > compare[i].studentCount ){
+    //         //console.log("asdsa")
+    //         //result.pop();
+    //         //result.unshift(arr[i].subject);
+    //         result.push(arr[i].subject);
+    //     } else {
+    //         //compare = arr[i];
+    //         result.unshift(arr[i].subject);
+    //         //result.push(arr[i].subject);
+    //     }
+    // }
+
+
+//console.log(result);
+
+return result;
 
 }
 
