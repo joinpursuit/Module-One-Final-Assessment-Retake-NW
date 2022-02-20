@@ -14,8 +14,21 @@
 * returns: {}
 */
 
-function countWords() {
-  
-}
+function countWords(arr) {
+  let count = 0;
+  let firstWord = arr[0];
+  let ObjOfWords = {};
+  arr.sort();
 
+  for (let word of arr) {
+    if (word == firstWord) {
+      count ++;
+    } else {
+      count = 1;
+      firstWord = word;
+    }
+    ObjOfWords[word] = count;
+  }
+  return ObjOfWords; 
+}
 module.exports = countWords

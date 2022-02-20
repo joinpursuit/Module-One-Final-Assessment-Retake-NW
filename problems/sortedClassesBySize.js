@@ -11,8 +11,33 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
+function sortClassesBySize(arr) {
+  /*let studentsNumber = [];
+  let classes = [];
+  let count = arr[0].studentCount;
 
+   console.log(arr.sort(a,b));
+  
+  // arr.sort()
+ /* for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i].subject);
+  studentsNumber.push(arr[i].studentCount);
+  }*/
+  /*studentsNumber.sort();
+  for (let i = 0; i < arr.length; i++) {
+    if ( arr[i].studentCount < count) {
+        classes.push(arr[i].subject);
+        count = arr[i].studentCount;
+    } 
+  }*/
+//console.log(classes);
+
+let studentsNumber = [];
+arr.sort((a,b) => {return a.studentCount - b.studentCount})
+for (let i = 0; i < arr.length; i++){
+    studentsNumber.push(arr[i].subject);
+}
+return studentsNumber;
 }
 
 module.exports = sortClassesBySize
