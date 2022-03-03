@@ -13,8 +13,9 @@
 * returns: 0
 */
 
-function countThrees() {
-
+function countThrees(n) {
+let string = n.toString()
+    return string.split('3').length-1
 }
 
 module.exports = countThrees

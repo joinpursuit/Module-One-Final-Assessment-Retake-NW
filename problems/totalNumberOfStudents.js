@@ -11,8 +11,15 @@
 * returns: 167
 */
 
-function totalNumberOfStudents() {
-
-}
+function totalNumberOfStudents(arr) {
+    let total = 0;
+    let amount = arr.map((el) => {
+      return el.studentCount;
+    });
+    amount.forEach((el) => {
+      total = total + el;
+    });
+    return total;
+  }
 
 module.exports = totalNumberOfStudents

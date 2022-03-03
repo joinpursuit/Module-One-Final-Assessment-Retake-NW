@@ -9,8 +9,13 @@
 * ex: sumEvenNumbers([4, 3, 10])
 * returns: 14
 */
-function sumEvenNumbers() {
-
+function sumEvenNumbers(arr) {
+    let evenSum = arr.filter((el) => {
+        return el % 2 === 0;
+      });
+      return evenSum.reduce((accum, el) => {
+        return accum + el;
+      });
 }
 
 module.exports = sumEvenNumbers

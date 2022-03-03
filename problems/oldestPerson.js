@@ -11,8 +11,14 @@
  * ex: oldestPerson({ 'Marcus': 29, 'Julia': 29, 'Kevin': 34 })
  * returns: 'Kevin'
  */
-function oldestPerson() {
-
-}
+function oldestPerson(obj){
+        let oldest;
+        for (old in obj){
+            if (!oldest || obj[old] > obj[oldest]){
+                oldest = old
+            }
+        }
+        return oldest;
+    }
 
 module.exports = oldestPerson
