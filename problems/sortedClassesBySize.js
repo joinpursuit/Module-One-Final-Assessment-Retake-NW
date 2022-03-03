@@ -11,8 +11,13 @@
 * returns: ["B", "C", "A"]
 */
 
-function sortClassesBySize() {
-
-}
+function sortClassesBySize(arr) {
+    arr.sort((a, b) => {
+      return a.studentCount - b.studentCount;
+    });
+    return arr.map((el) => {
+      return el.subject;
+    });
+  }
 
 module.exports = sortClassesBySize
